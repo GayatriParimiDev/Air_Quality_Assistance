@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Air Quality Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="left-panel">
+      <div class="brand">
+        <div class="logo">🌿</div>
+        <div class="title">AQI Sense</div>
+      </div>
+
+      <div class="hero">
+        <h1>Ask about air quality anywhere in the world</h1>
+        <p>Type a city name or ask: “What is the AQI in Delhi?”</p>
+
+        <div class="quick">
+          <button onclick="fillExample('What is the AQI in New Delhi?')">AQI in New Delhi</button>
+          <button onclick="fillExample('Show top 5 polluted cities')">Top 5 Polluted</button>
+          <button onclick="fillExample('What precautions for AQI 220?')">Precautions Example</button>
+        </div>
+      </div>
+
+      <div class="credits">Open-Source • Uses your uploaded globalAirQuality.csv</div>
+    </div>
+
+    <div class="chat-panel">
+      <div id="chat" class="chat">
+        <!-- messages go here -->
+      </div>
+
+      <form id="msgForm" class="composer" onsubmit="return sendMessage();">
+        <input id="msgInput" placeholder="Ask: What is the AQI in London?" autocomplete="off"/>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
