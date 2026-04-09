@@ -364,7 +364,7 @@ This project is licensed under the MIT License - see LICENSE file for details.
 
 ## 👨‍💻 Author
 
-**AQI Sense Development Team**
+Parimi Gayatri Srivarshini
 
 ---
 
